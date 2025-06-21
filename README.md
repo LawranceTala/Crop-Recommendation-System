@@ -42,13 +42,14 @@ If you don’t have Anaconda installed, download and install it from:
 
 15:Save the best-performing model using joblib or pickle
 
-#Saving Models
+**Saving Models**
 
 1:Trained models will be saved as .pkl files in the root or model/ directory.
 
 2:Example: RandomForest.pkl, XGBoost.pkl, etc.
 
  #Running the API
+ 
 ✅ Step-by-step:
 
 1:Navigate to the backend folder
