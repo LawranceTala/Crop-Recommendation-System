@@ -117,7 +117,8 @@ If you don’t have Anaconda installed, download and install it from:
  src/App.css
 
 7;Start the Frontend
-  npm start
+
+    npm start
 
   Access the App
 
