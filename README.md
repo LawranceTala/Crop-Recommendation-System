@@ -1,7 +1,8 @@
 # Crop-Recommendation-System
  This project recommends the most suitable crop to grow based on environmental and soil conditions like nitrogen, phosphorus, potassium, temperature, humidity, pH, and rainfall. It uses a machine learning model trained on real agricultural data and provides predictions through a FastAPI backend with a ReactJS frontend interface.
 
-⚙️ Setup for Anaconda Python Package Manager
+# Setup for Anaconda Python Package Manager
+
 ✅ Step-by-step:
 1. Install Anaconda
 If you don’t have Anaconda installed, download and install it from:
@@ -10,97 +11,95 @@ If you don’t have Anaconda installed, download and install it from:
  pip install -r backend/requirements.txt
 📝 Note: Make sure you have a requirements.txt file inside your backend folder
 
-📚 Training the Model
-✅ Step-by-step:
-Downloading the Dataset
+# Training the Model
 
-Download the dataset from Kaggle:
+✅ Step-by-step:
+1:Downloading the Dataset
+
+2:Download the dataset from Kaggle:
 [🔗 Crop Recommendation Dataset | Kaggle](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
 
-Place the downloaded Crop_recommendation.csv file in the root directory of this project.
+3:Place the downloaded Crop_recommendation.csv file in the root directory of this project.
 
-Open the Notebook
+4: Open the  jupiter Notebook
 
-Launch Jupyter Notebook (you can use Anaconda Navigator or run jupyter notebook in your terminal).
+5:Launch Jupyter Notebook (you can use Anaconda Navigator or run jupyter notebook in your terminal).
 
-Open the file:
-Update Dataset Path
+6:Open the file:
+7:Update Dataset Path
 
-In the second code cell, make sure the dataset path is correct
-data = pd.read_csv("Crop_recommendation.csv")
-Run All Cells
+8:In the second code cell, make sure the dataset path is correct
+9:data = pd.read_csv("Crop_recommendation.csv")
+10:Run All Cells
 
-Execute all the cells one by one to:
+11:Execute all the cells one by one to:
 
-Preprocess the data
+12:Preprocess the data
 
-Train multiple models (RandomForest, XGBoost, etc.)
+13:Train multiple models (RandomForest, XGBoost, etc.)
 
-Evaluate performance
+14:Evaluate performance
 
-Save the best-performing model using joblib or pickle
+15:Save the best-performing model using joblib or pickle
 
-Saveing Models
+#Saving Models
 
-Trained models will be saved as .pkl files in the root or model/ directory.
+1:Trained models will be saved as .pkl files in the root or model/ directory.
 
-Example: RandomForest.pkl, XGBoost.pkl, etc.
+2:Example: RandomForest.pkl, XGBoost.pkl, etc.
 
- Running the API
+ #Running the API
 ✅ Step-by-step:
 
-Navigate to the backend folder
+1:Navigate to the backend folder
 cd backend
-Run the FastAPI server using Uvicorn
-uvicorn server:app --reload 
-Access the API
+2;Run the FastAPI server using Uvicorn
+    uvicorn server:app --reload 
+3:Access the API
 
-Once the server is running, you can visit the following in your browser:
-Swagger UI: http://localhost:8080/docs
+4:Once the server is running, you can visit the following in your browser:
+    Swagger UI: http://localhost:8080/docs
 
-API Endpoint
+#API Endpoint
 
-The API expects a JSON input like this:
+1:The API expects a JSON input like this:
 
 {
   "data": [90, 42, 43, 20.879, 82.002, 6.5, 202.93]
 }
-It returns a response with the predicted crop name.
+2:It returns a response with the predicted crop name.
 
-Running the Frontend (ReactJS)
+#Running the Frontend (ReactJS)
 ✅ Step-by-step:
-Install Node.js and NPM
+1:Install Node.js and NPM
 
-Download and install Node.js (which includes npm):
+2:Download and install Node.js (which includes npm):
 🔗 https://nodejs.org
 
-Install Frontend Dependencies
+3:Install Frontend Dependencies
 
-Open a terminal inside the frontend folder:
-cd frontend
+ Open a terminal inside the frontend folder:
+ cd frontend
+ npm install
+ Connect to the Backend
+ Open src/App.js
+ 
+ Replace the API URL with your local FastAPI server:
 
-npm install
+ const response = await axios.post("http://localhost:8080/predict", data);
 
-Connect to the Backend
+ Customize the UI
 
-Open src/App.js
+ You can modify the styles in:
+ src/App.css
 
-Replace the API URL with your local FastAPI server:
+4;Start the Frontend
+ npm start
 
-const response = await axios.post("http://localhost:8080/predict", data);
+ Access the App
 
-Customize the UI
-
-You can modify the styles in:
-src/App.css
-
-Start the Frontend
-npm start
-
-Access the App
-
-Open your browser and go to:
-http://localhost:3000
+ Open your browser and go to:
+ http://localhost:3000
 
 
 
