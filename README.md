@@ -48,6 +48,7 @@ Example: RandomForest.pkl, XGBoost.pkl, etc.
 
  Running the API
 ✅ Step-by-step:
+
 Navigate to the backend folder
 cd backend
 Run the FastAPI server using Uvicorn
