@@ -50,7 +50,8 @@ If you don’t have Anaconda installed, download and install it from:
 
 2:Example: RandomForest.pkl, XGBoost.pkl, etc.
 
- #Running the API
+
+##  Running the API
  
 ✅ Step-by-step:
 
@@ -72,7 +73,9 @@ cd backend
 }
 2:It returns a response with the predicted crop name.
 
-#Running the Frontend (ReactJS)
+
+##  Running the Frontend (ReactJS)
+
 ✅ Step-by-step:
 1:Install Node.js and NPM
 
