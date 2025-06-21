@@ -3,7 +3,7 @@
 
 # Setup for Anaconda Python Package Manager
 
-✅ Step-by-step:
+
 1. Install Anaconda
 If you don’t have Anaconda installed, download and install it from:
 🔗 https://www.anaconda.com/products/distribution
@@ -13,7 +13,7 @@ If you don’t have Anaconda installed, download and install it from:
 
 # Training the Model
 
-✅ Step-by-step:
+
 1:Downloading the Dataset
 
 2:Download the dataset from Kaggle:
@@ -51,14 +51,16 @@ If you don’t have Anaconda installed, download and install it from:
 2:Example: RandomForest.pkl, XGBoost.pkl, etc.
 
 
-##  Running the API
+##  Running the Fast API
  
-✅ Step-by-step:
+
 
 1:Navigate to the backend folder
-cd backend
+
+        cd backend
 
 2;Run the FastAPI server using Uvicorn
+
     uvicorn server:app --reload 
     
 3:Access the API
@@ -80,7 +82,7 @@ cd backend
 
 ##  Running the Frontend (ReactJS)
 
-✅ Step-by-step:
+
 
 1:Install Node.js and NPM
 
@@ -103,7 +105,7 @@ cd backend
  
  Replace the API URL with your local FastAPI server:
 
- const response = await axios.post("http://localhost:8080/predict", data);
+    const response = await axios.post("http://localhost:8080/predict", data);
 
 6:Customize the UI
 
