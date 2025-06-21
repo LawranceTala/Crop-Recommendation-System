@@ -57,55 +57,67 @@ If you don’t have Anaconda installed, download and install it from:
 
 1:Navigate to the backend folder
 cd backend
+
 2;Run the FastAPI server using Uvicorn
     uvicorn server:app --reload 
+    
 3:Access the API
 
 4:Once the server is running, you can visit the following in your browser:
+
     Swagger UI: http://localhost:8080/docs
 
 #API Endpoint
 
-1:The API expects a JSON input like this:
+5:The API expects a JSON input like this:
 
 {
   "data": [90, 42, 43, 20.879, 82.002, 6.5, 202.93]
 }
-2:It returns a response with the predicted crop name.
+
+6:It returns a response with the predicted crop name.
 
 
 ##  Running the Frontend (ReactJS)
 
 ✅ Step-by-step:
+
 1:Install Node.js and NPM
 
 2:Download and install Node.js (which includes npm):
+
 🔗 https://nodejs.org
 
 3:Install Frontend Dependencies
 
  Open a terminal inside the frontend folder:
- cd frontend
- npm install
- Connect to the Backend
- Open src/App.js
+ 
+    cd frontend
+ 
+    npm install
+ 
+  4:Connect to the Backend
+ 
+ 5: Open src/App.js
+ 
  
  Replace the API URL with your local FastAPI server:
 
  const response = await axios.post("http://localhost:8080/predict", data);
 
- Customize the UI
+6:Customize the UI
 
  You can modify the styles in:
  src/App.css
 
-4;Start the Frontend
- npm start
+7;Start the Frontend
+  npm start
 
- Access the App
+  Access the App
 
- Open your browser and go to:
- http://localhost:3000
+8: Open your browser and go to:
+
+     http://localhost:3000
 
 
 
