@@ -26,6 +26,7 @@ If you don’t have Anaconda installed, download and install it from:
 5:Launch Jupyter Notebook (you can use Anaconda Navigator or run jupyter notebook in your terminal).
 
 6:Open the file:
+
 7:Update Dataset Path
 
 8:In the second code cell, make sure the dataset path is correct
