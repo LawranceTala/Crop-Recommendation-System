@@ -8,11 +8,13 @@
 If you don’t have Anaconda installed, download and install it from:
 🔗 https://www.anaconda.com/products/distribution
 2. Install Python Packages
- pip install -r backend/requirements.txt
+   
+       pip install -r backend/requirements.txt
+   
 📝 Note: Make sure you have a requirements.txt file inside your backend folder
 
-# Training the Model
 
+# Training the Model
 
 1:Downloading the Dataset
 
@@ -30,19 +32,20 @@ If you don’t have Anaconda installed, download and install it from:
 7:Update Dataset Path
 
 8:In the second code cell, make sure the dataset path is correct
-9:data = pd.read_csv("Crop_recommendation.csv")
 
-10:Run All Cells
+    data = pd.read_csv("Crop_recommendation.csv")
 
-11:Execute all the cells one by one to:
+9:Run All Cells
 
-12:Preprocess the data
+10:Execute all the cells one by one to:
 
-13:Train multiple models (RandomForest, XGBoost, etc.)
+11:Preprocess the data
 
-14:Evaluate performance
+12:Train multiple models (RandomForest, XGBoost, etc.)
 
-15:Save the best-performing model using joblib or pickle
+13:Evaluate performance
+
+14:Save the best-performing model using joblib or pickle
 
 **Saving Models**
 
@@ -73,9 +76,10 @@ If you don’t have Anaconda installed, download and install it from:
 
 5:The API expects a JSON input like this:
 
-{
-  "data": [90, 42, 43, 20.879, 82.002, 6.5, 202.93]
-}
+
+
+      "data": [90, 42, 43, 20.879, 82.002, 6.5, 202.93]
+
 
 6:It returns a response with the predicted crop name.
 
