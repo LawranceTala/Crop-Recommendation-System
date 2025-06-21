@@ -93,7 +93,9 @@ You can modify the styles in:
 src/App.css
 
 Start the Frontend
-npm starAccess the App
+npm start
+
+Access the App
 
 Open your browser and go to:
 http://localhost:3000
