@@ -30,6 +30,7 @@ If you don’t have Anaconda installed, download and install it from:
 
 8:In the second code cell, make sure the dataset path is correct
 9:data = pd.read_csv("Crop_recommendation.csv")
+
 10:Run All Cells
 
 11:Execute all the cells one by one to:
