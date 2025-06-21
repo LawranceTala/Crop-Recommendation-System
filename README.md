@@ -98,26 +98,7 @@ npm starAccess the App
 Open your browser and go to:
 http://localhost:3000
 
- Project Structure
 
- 
-Crop-Recommendation-System/
-├── backend/
-│   ├── server.py
-│   ├── requirements.txt
-│   ├── ... (other backend files)
-├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── ...
-│   ├── package.json
-│   └── ... (other frontend files)
-├── notebook.ipynb
-├── Crop_recommendation.csv
-├── RandomForest.pkl
-├── XGBoost.pkl
-├── README.md
 
  
 
