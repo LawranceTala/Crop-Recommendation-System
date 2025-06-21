@@ -15,7 +15,7 @@ If you don’t have Anaconda installed, download and install it from:
 Downloading the Dataset
 
 Download the dataset from Kaggle:
-🔗 Crop Recommendation Dataset | Kaggle
+[🔗 Crop Recommendation Dataset | Kaggle](https://www.kaggle.com/datasets/atharvaingle/crop-recommendation-dataset)
 
 Place the downloaded Crop_recommendation.csv file in the root directory of this project.
 
@@ -66,6 +66,58 @@ The API expects a JSON input like this:
   "data": [90, 42, 43, 20.879, 82.002, 6.5, 202.93]
 }
 It returns a response with the predicted crop name.
+
+Running the Frontend (ReactJS)
+✅ Step-by-step:
+Install Node.js and NPM
+
+Download and install Node.js (which includes npm):
+🔗 https://nodejs.org
+
+Install Frontend Dependencies
+
+Open a terminal inside the frontend folder:
+cd frontend
+npm install
+Connect to the Backend
+
+Open src/App.js
+
+Replace the API URL with your local FastAPI server:
+
+const response = await axios.post("http://localhost:8080/predict", data);
+
+Customize the UI
+
+You can modify the styles in:
+src/App.css
+
+Start the Frontend
+npm starAccess the App
+
+Open your browser and go to:
+http://localhost:3000
+
+ Project Structure
+Crop-Recommendation-System/
+├── backend/
+│   ├── server.py
+│   ├── requirements.txt
+│   ├── ... (other backend files)
+├── frontend/
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   └── ...
+│   ├── package.json
+│   └── ... (other frontend files)
+├── notebook.ipynb
+├── Crop_recommendation.csv
+├── RandomForest.pkl
+├── XGBoost.pkl
+├── README.md
+
+ 
 
 
 
