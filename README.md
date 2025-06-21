@@ -78,7 +78,9 @@ Install Frontend Dependencies
 
 Open a terminal inside the frontend folder:
 cd frontend
+
 npm install
+
 Connect to the Backend
 
 Open src/App.js
